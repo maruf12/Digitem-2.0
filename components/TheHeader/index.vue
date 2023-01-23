@@ -2,7 +2,7 @@
   <header class="bg-gray-900 py-5">
     <BaseContainer>
       <div class="flex items-center">
-        <img src="icon.png" class="h-9 mr-3 sm:h-12" alt="DigiTeam Logo" />
+        <img src="/icon.png" class="h-9 mr-3 sm:h-12" alt="DigiTeam Logo" />
         <div class="text-left flex-grow">
           <h1
             class="text-sm md:text-base leading-normal font-medium text-white"
