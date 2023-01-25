@@ -1,7 +1,7 @@
 <template>
   <header class="bg-gray-900 py-5">
     <BaseContainer>
-      <div class="flex items-center">
+      <div class="flex items-center ml-5">
         <img src="/icon.png" class="h-9 mr-3 sm:h-12" alt="DigiTeam Logo" />
         <div class="text-left flex-grow">
           <h1
