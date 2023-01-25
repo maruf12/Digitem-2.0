@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       apiBase: process.env.NUXT_BASE_URL,
+      logisticAPI: process.env.API_BASE_LOGISTIC_URL,
     },
   },
   modules: ["@nuxtjs/tailwindcss", "@kevinmarrec/nuxt-pwa"],
