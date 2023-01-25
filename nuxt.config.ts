@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss", "@kevinmarrec/nuxt-pwa"],
+  runtimeConfig: {
+    public: {
+      apiBase: process.env.API_BASE_URL,
+    },
+  },
   app: {
     head: {
       meta: [

@@ -5,7 +5,7 @@
         class="bg-white px-8 py-6 rounded-xl w-[20rem] md:w-[29rem] mt-8 shadow"
       >
         <p class="font-extralight tracking-wide text-sm lg:text-base">
-          {{ item.agency_name }}
+          {{ item.agency_address }}
         </p>
         <p class="font-semibold mt-2 text-[#2D3134]">
           {{ item.applicant_fullname }}
@@ -18,8 +18,10 @@
   </div>
 </template>
 <script setup>
+const runtimeConfig = useRuntimeConfig();
+const baseAPI = runtimeConfig.public.apiBase;
+const email = "testing.digiteam2@jds.com";
 const { data: count } = await useFetch(
-  "https://pikobar-logistik-api-dev.rover.digitalservice.id/api/v1/vaccine-tracking?search=fauzimaulanakusuma@gmail.com&page=1&limit=5"
+  `${baseAPI}/vaccine-tracking?search=${email}&page=1&limit=10`
 );
-console.log(count);
 </script>
