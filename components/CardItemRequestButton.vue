@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="flex w-1/2 mx-auto mt-10">
+    <div class="flex w-2/3 lg:w-1/2 mx-auto mt-10">
       <button
-        class="text-white bg-[#2196F3] hover:bg-[#478dc7] focus:ring focus:outline-none font-medium rounded-lg text-sm px-3 py-3 w-2/5 mx-auto"
+        class="text-white bg-[#2196F3] hover:bg-[#478dc7] focus:ring focus:outline-none font-medium rounded-lg text-sm px-3 py-3 lg:w-2/5 mx-auto"
         @click="getData"
       >
         Fetch Data
       </button>
       <button
-        class="text-white bg-red-500 hover:bg-red-400 focus:ring focus:outline-none font-medium rounded-lg text-sm px-3 py-3 w-2/5 mx-auto"
+        class="text-white bg-red-500 hover:bg-red-400 focus:ring focus:outline-none font-medium rounded-lg text-sm px-3 py-3 lg:w-2/5 mx-auto"
         @click="clearData"
       >
         Clear Data
