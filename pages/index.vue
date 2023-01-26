@@ -8,5 +8,9 @@
     <Artikel />
     <h3 class="text-md text-white font-semibold mt-5">Data Logistik</h3>
     <card-item />
+    <h3 class="text-md text-white font-semibold mt-5">
+      Data Logistik Request Button
+    </h3>
+    <card-item-request-button />
   </BaseContainer>
 </template>
