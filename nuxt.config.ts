@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       logisticAPI: process.env.API_BASE_LOGISTIC_URL,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@kevinmarrec/nuxt-pwa"],
+  modules: ["@nuxtjs/tailwindcss"],
   app: {
     head: {
       meta: [
@@ -16,17 +16,6 @@ export default defineNuxtConfig({
             "width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0",
         },
       ],
-    },
-  },
-  pwa: {
-    workbox: { enabled: true },
-    meta: {
-      title: "Digiteam 2.0",
-      author: "JDS",
-    },
-    manifest: {
-      name: "Digiteam 2.0",
-      short_name: "Digiteam PWA",
     },
   },
 });
