@@ -1,8 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="bg-gray-700">
-    <div class="max-w-5xl min-h-screen mx-auto shadow-md bg-gray-800 pb-5">
-      <TheHeader />
+  <div class="bg-gray-100">
+    <TheHeader />
+    <div class="max-w-lg min-h-screen mx-auto pb-5">
       <slot />
     </div>
   </div>
