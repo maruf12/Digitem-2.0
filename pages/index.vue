@@ -1,12 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <BaseContainer class="mb-10">
-    <UserProfile />
-    <h3 class="text-md text-white font-semibold mt-3">Pengumuman Penting</h3>
-    <Pengumuman />
-    <h3 class="text-md text-white font-semibold mt-3">Artikel</h3>
-    <Artikel />
-    <h3 class="text-md text-white font-semibold mt-5">Data Logistik</h3>
-    <card-item />
-  </BaseContainer>
+  <BaseCard class="items-center mt-8">
+    <h2 class="text-lg text-center font-semibold">Hello World!</h2>
+    <NuxtLink to="/login"> <BaseButton>Login</BaseButton> </NuxtLink>
+  </BaseCard>
 </template>
