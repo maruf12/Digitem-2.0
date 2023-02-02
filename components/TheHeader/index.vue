@@ -1,21 +1,19 @@
 <template>
-  <header class="bg-gray-900 py-5">
-    <BaseContainer>
-      <div class="flex items-center ml-5">
-        <img src="/icon.png" class="h-9 mr-3 sm:h-12" alt="DigiTeam Logo" />
-        <div class="text-left flex-grow">
-          <h1
-            class="text-sm md:text-base leading-normal font-medium text-white"
-          >
-            DigiTeam
-          </h1>
-          <h2 class="text-xs md:text-sm text-white">
-            Digital Together Everyone Achieve More
-          </h2>
-          <h2 class="text-xs md:text-sm text-white">Jabar Digital Service</h2>
+  <header class="bg-white py-5">
+    <div class="max-w-5xl mx-auto">
+      <BaseContainer class="flex justify-center">
+        <div class="flex items-center">
+          <img src="/icon.png" class="h-8 mr-1" alt="DigiTeam Logo" />
+          <div class="text-left">
+            <h1
+              class="text-sm md:text-base leading-normal font-medium text-gray-900"
+            >
+              DigiTeam
+            </h1>
+          </div>
         </div>
-      </div>
-    </BaseContainer>
+      </BaseContainer>
+    </div>
   </header>
 </template>
 
