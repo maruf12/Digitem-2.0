@@ -1,12 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <BaseContainer class="mb-10">
-    <UserProfile />
-    <h3 class="text-md text-white font-semibold mt-3">Pengumuman Penting</h3>
-    <Pengumuman />
-    <h3 class="text-md text-white font-semibold mt-3">Artikel</h3>
-    <Artikel />
-    <h3 class="text-md text-white font-semibold mt-5">Data Logistik</h3>
-    <card-item />
-  </BaseContainer>
+  <button
+    class="text-white bg-[#F66F4D] hover:bg-[#db5230] focus:ring-4 focus:outline-none focus:ring-orange-600 font-medium rounded-lg text-sm px-3 py-3 mx-auto"
+    aria-label="Booking Now"
+  >
+    <NuxtLink to="/login">Login</NuxtLink>
+  </button>
 </template>

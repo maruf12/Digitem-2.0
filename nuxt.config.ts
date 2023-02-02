@@ -19,10 +19,11 @@ export default defineNuxtConfig({
     },
   },
   pwa: {
-    workbox: { enabled: true },
+    workbox: { enabled: false },
     meta: {
       title: "Digiteam 2.0",
       author: "JDS",
+      mobileAppIOS: true,
     },
     manifest: {
       name: "Digiteam 2.0",
