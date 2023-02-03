@@ -6,9 +6,9 @@
           <img src="/icon.png" class="h-8 mr-1" alt="DigiTeam Logo" />
           <div class="text-left">
             <h1
-              class="text-sm md:text-base leading-normal font-medium text-gray-900"
+              class="text-sm md:text-base leading-normal font-bold text-gray-900"
             >
-              DigiTeam
+              Digiteam
             </h1>
           </div>
         </div>
