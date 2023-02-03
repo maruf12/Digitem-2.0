@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white py-5">
+  <header class="fixed bg-white top-0 z-100 w-full px-2 py-4">
     <div class="max-w-5xl mx-auto">
       <BaseContainer class="flex justify-center">
         <div class="flex items-center">
