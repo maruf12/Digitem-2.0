@@ -23,6 +23,7 @@ export default defineNuxtConfig({
     meta: {
       title: "Digiteam 2.0",
       author: "JDS",
+      mobileAppIOS: true,
     },
     manifest: {
       name: "Digiteam 2.0",
