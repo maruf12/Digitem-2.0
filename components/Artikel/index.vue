@@ -2,17 +2,15 @@
   <div v-for="product in products" :key="product.id">
     <NuxtLink to="/">
       <BaseContainer
-        class="bg-gray-900 rounded-lg text-center items-center mt-2 py-5 px-5"
+        class="bg-white rounded-lg text-center items-center mt-2 py-5 px-5"
       >
         <div class="flex items-center">
           <img :src="product.image" alt="image" class="h-10 w-10 mr-3" />
           <div class="text-left flex-grow">
-            <p
-              class="text-sm md:text-base leading-normal font-medium text-white"
-            >
+            <p class="text-sm md:text-base leading-normal font-medium">
               {{ product.title }}
             </p>
-            <p class="text-xs md:text-sm text-white">
+            <p class="text-xs md:text-sm">
               {{ product.description.substring(0, 130) }}...
             </p>
           </div>
