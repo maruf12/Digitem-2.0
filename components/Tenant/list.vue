@@ -1,8 +1,6 @@
 <template>
   <div v-for="tenant in listTenant" :key="tenant.id">
-    <NuxtLink :to="tenant.name">
-      <BaseButton>{{ tenant.name }}</BaseButton>
-    </NuxtLink>
+    <BaseButton @click="goToTenant(tenant.name)">{{ tenant.name }}</BaseButton>
   </div>
 </template>
 
@@ -12,7 +10,11 @@ defineComponent({
 });
 
 const listTenant = [
-  { id: 1, name: "Jabar Digital Service" },
+  { id: 1, name: "Jabar-Digital Service" },
   { id: 2, name: "Diskominfo Jabar" },
 ];
+
+function goToTenant(tenant) {
+  router.push({ name: tenant });
+}
 </script>
