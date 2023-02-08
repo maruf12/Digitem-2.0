@@ -1,8 +1,6 @@
 <template>
   <NuxtLink to="/">
-    <BaseContainer
-      class="bg-white rounded-lg text-center items-center py-5 px-5"
-    >
+    <BaseCard>
       <div class="flex items-center">
         <img src="/user.svg" class="h-12 mr-3" alt="User Icon" />
         <div class="text-left flex-grow">
@@ -14,7 +12,7 @@
           </p>
         </div>
       </div>
-    </BaseContainer>
+    </BaseCard>
   </NuxtLink>
 </template>
 

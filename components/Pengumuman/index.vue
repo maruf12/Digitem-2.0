@@ -1,8 +1,6 @@
 <template>
   <NuxtLink to="/">
-    <BaseContainer
-      class="bg-white rounded-lg text-center items-center mt-2 py-5 px-5"
-    >
+    <BaseCard>
       <div class="flex items-center">
         <svg
           aria-hidden="true"
@@ -28,7 +26,7 @@
           <p class="text-xs md:text-sm">Jumat, 9 Okt 2020</p>
         </div>
       </div>
-    </BaseContainer>
+    </BaseCard>
   </NuxtLink>
 </template>
 

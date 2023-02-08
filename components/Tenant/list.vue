@@ -10,7 +10,7 @@ defineComponent({
 });
 
 const listTenant = [
-  { id: 1, name: "Jabar-Digital Service", path: "/jabardigitalservice" },
+  { id: 1, name: "Jabar Digital Service", path: "/jabardigitalservice" },
   { id: 2, name: "Diskominfo Jabar", path: "/diskominfojabar" },
 ];
 const router = useRouter();

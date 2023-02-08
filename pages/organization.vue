@@ -5,5 +5,8 @@
       Select Your Organization
     </h2>
     <TenantList />
+    <!-- <h2 class="text-md text-center font-semibold mb-2">
+      Anda belum terdaftar di organisasi manapun
+    </h2> -->
   </BaseCard>
 </template>

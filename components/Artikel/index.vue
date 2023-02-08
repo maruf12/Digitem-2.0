@@ -1,9 +1,7 @@
 <template>
   <div v-for="product in products" :key="product.id">
     <NuxtLink to="/">
-      <BaseContainer
-        class="bg-white rounded-lg text-center items-center mt-2 py-5 px-5"
-      >
+      <BaseCard class="mb-2">
         <div class="flex items-center">
           <img :src="product.image" alt="image" class="h-10 w-10 mr-3" />
           <div class="text-left flex-grow">
@@ -15,7 +13,7 @@
             </p>
           </div>
         </div>
-      </BaseContainer>
+      </BaseCard>
     </NuxtLink>
   </div>
 </template>
