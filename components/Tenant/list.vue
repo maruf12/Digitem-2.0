@@ -1,6 +1,6 @@
 <template>
   <div v-for="tenant in listTenant" :key="tenant.id">
-    <BaseButton @click="goToTenant(tenant.name)">{{ tenant.name }}</BaseButton>
+    <BaseButton @click="goToTenant(tenant)">{{ tenant.name }}</BaseButton>
   </div>
 </template>
 
@@ -10,11 +10,11 @@ defineComponent({
 });
 
 const listTenant = [
-  { id: 1, name: "Jabar-Digital Service" },
-  { id: 2, name: "Diskominfo Jabar" },
+  { id: 1, name: "Jabar-Digital Service", path: "/jabardigitalservice" },
+  { id: 2, name: "Diskominfo Jabar", path: "/diskominfojabar" },
 ];
-
+const router = useRouter();
 function goToTenant(tenant) {
-  router.push({ name: tenant });
+  router.push({ path: tenant.path });
 }
 </script>
