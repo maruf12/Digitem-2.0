@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_BASE_URL,
       logisticAPI: process.env.API_BASE_LOGISTIC_URL,
+      baseURL: process.env.BASE_URL,
     },
   },
   ssr: false,

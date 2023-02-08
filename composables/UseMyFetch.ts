@@ -2,7 +2,7 @@ export const useMyFetch = (request: any, opts: any) => {
   const config = useRuntimeConfig();
   const authStore = useAuthStore();
   const requestOptions = {
-    baseURL: config.public.logisticAPI,
+    baseURL: config.public.baseURL,
     ...opts,
   };
   if (localStorage.getItem("token")) {
