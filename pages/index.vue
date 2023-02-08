@@ -5,3 +5,8 @@
     <NuxtLink to="/login"> <BaseButton>Login</BaseButton> </NuxtLink>
   </BaseCard>
 </template>
+<script setup lang="ts">
+definePageMeta({
+  middleware: ["auth"],
+});
+</script>
