@@ -1,7 +1,6 @@
 export default defineNuxtRouteMiddleware(async (to) => {
   const router = useRouter();
   const authStore = useAuthStore();
-  console.log(authStore.token);
   const publicPages = ["/login", "/"];
   const authRequired = !publicPages.includes(to.path);
   if (authRequired && !authStore.token) {
