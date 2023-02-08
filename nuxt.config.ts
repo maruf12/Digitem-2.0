@@ -6,7 +6,15 @@ export default defineNuxtConfig({
       logisticAPI: process.env.API_BASE_LOGISTIC_URL,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@kevinmarrec/nuxt-pwa"],
+  ssr: false,
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@kevinmarrec/nuxt-pwa",
+    ["@pinia/nuxt", { autoImports: ["defineStore"] }],
+  ],
+  imports: {
+    dirs: ["stores"],
+  },
   app: {
     head: {
       meta: [
