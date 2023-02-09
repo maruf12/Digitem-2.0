@@ -4,9 +4,18 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_BASE_URL,
       logisticAPI: process.env.API_BASE_LOGISTIC_URL,
+      baseURL: process.env.BASE_URL,
     },
   },
-  modules: ["@nuxtjs/tailwindcss", "@kevinmarrec/nuxt-pwa"],
+  ssr: false,
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@kevinmarrec/nuxt-pwa",
+    ["@pinia/nuxt", { autoImports: ["defineStore"] }],
+  ],
+  imports: {
+    dirs: ["stores"],
+  },
   app: {
     head: {
       meta: [
@@ -19,7 +28,7 @@ export default defineNuxtConfig({
     },
   },
   pwa: {
-    workbox: { enabled: true },
+    workbox: { enabled: false },
     meta: {
       title: "Digiteam 2.0",
       author: "JDS",
