@@ -10,13 +10,14 @@
   <BaseButton class="ml-3" @click="getUserMe">Get me</BaseButton>
   <p class="ml-3">{{ userInfo.name }}</p>
 </template>
+
 <script setup lang="ts">
 const userInfo:any = ref("");
 const getUserMe = async () => {
   await useMyFetch("/me", {
     method: "GET",
   }).then((response:any) => {
-    userInfo.value = response.data;
+    userInfo.value = response.data.user;
   });
 };
 </script>
