@@ -52,7 +52,7 @@ function login() {
   authStore
     .login(loginForm)
     .then(() => {
-      route.push("/tenant");
+      route.push("/organization");
     })
     .catch((error) => console.error("login error", error));
 }
