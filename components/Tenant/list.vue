@@ -1,20 +1,20 @@
 <template>
-  <div v-for="tenant in listTenant" :key="tenant.id">
+  <div v-for="tenant in tenants" :key="tenant.id">
     <BaseButton @click="goToTenant(tenant)">{{ tenant.name }}</BaseButton>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+const organizationStore = useOrganizationStore();
+const router = useRouter();
+const props = defineProps(['tenants']);
+
 defineComponent({
   name: "TenantList",
 });
 
-const listTenant = [
-  { id: 1, name: "Jabar Digital Service", path: "/jabardigitalservice" },
-  { id: 2, name: "Diskominfo Jabar", path: "/diskominfojabar" },
-];
-const router = useRouter();
-function goToTenant(tenant) {
-  router.push({ path: tenant.path });
+function goToTenant(tenant:any) {
+  organizationStore.toOrganization(tenant)
+  router.push({ path: tenant.schema });
 }
 </script>
