@@ -27,5 +27,5 @@ defineComponent({
 });
 
 // fetch product
-const { data: products } = await useFetch(`${apiBase}/products?limit=7`);
+const { data: products } = await useFetch(`${apiBase}/products?limit=5`);
 </script>
