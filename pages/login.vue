@@ -32,11 +32,18 @@
         </button>
       </div>
     </div>
+    <dialog-error :open="isOpen" @setOpen="setIsOpen" />
   </BaseCard>
 </template>
 <script setup lang="ts">
+import {
+  Dialog,
+  DialogPanel,
+  DialogTitle,
+  DialogDescription,
+} from "@headlessui/vue";
 const authStore = useAuthStore();
-const router = useRouter();
+const route = useRouter();
 
 interface loginForm {
   username: string;
@@ -48,12 +55,20 @@ let loginForm: loginForm = {
   password: "",
 };
 
+const isOpen = ref(false);
+
 function login() {
   authStore
     .login(loginForm)
     .then(() => {
-      router.push("/tenant");
+      route.push("/tenant");
     })
-    .catch((error) => console.error("login error", error));
+    .catch((error) => {
+      isOpen.value = true
+    });
+}
+
+function setIsOpen(value: boolean) {
+  isOpen.value = value;
 }
 </script>
