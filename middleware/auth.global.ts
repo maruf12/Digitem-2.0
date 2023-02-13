@@ -4,6 +4,6 @@ export default defineNuxtRouteMiddleware(async (to) => {
   if (authRequired && !localStorage.getItem("token")) {
     return navigateTo("/login", { replace: true });
   } else if (localStorage.getItem("token") && to.path === "/login") {
-    return navigateTo("/tenant", { replace: true });
+    return navigateTo("/organization", { replace: true });
   }
 });
