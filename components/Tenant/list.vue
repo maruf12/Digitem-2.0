@@ -15,6 +15,6 @@ defineComponent({
 
 function goToTenant(tenant:any) {
   organizationStore.toOrganization(tenant)
-  router.push({ path: tenant.schema });
+  router.push({ path: tenant.slug });
 }
 </script>
