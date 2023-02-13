@@ -19,8 +19,6 @@
 </template>
 
 <script setup>
-const runtimeConfig = useRuntimeConfig();
-const apiBase = runtimeConfig.public.apiBase;
 const props = defineProps(['articles']);
 
 defineComponent({
