@@ -1,20 +1,18 @@
 <template>
   <NuxtLink to="/">
-    <BaseContainer
-      class="bg-gray-900 rounded-lg text-center items-center mt-4 py-5 px-5"
-    >
+    <BaseCard>
       <div class="flex items-center">
         <img src="/user.svg" class="h-12 mr-3" alt="User Icon" />
         <div class="text-left flex-grow">
-          <p class="text-sm md:text-base leading-normal font-medium text-white">
-            Sheila Azhar Almufarida
+          <p class="text-sm md:text-base leading-normal font-medium">
+            {{ user.name }}
           </p>
-          <p class="text-xs md:text-sm text-white">
-            Junior Software Programmer - Frontend Engineer
+          <p class="text-xs md:text-sm">
+            {{ organization.name }}
           </p>
         </div>
       </div>
-    </BaseContainer>
+    </BaseCard>
   </NuxtLink>
 </template>
 
@@ -22,4 +20,6 @@
 defineComponent({
   name: "UserProfile",
 });
+const user = JSON.parse(localStorage.getItem('user'));
+const organization = JSON.parse(localStorage.getItem('organization'));
 </script>

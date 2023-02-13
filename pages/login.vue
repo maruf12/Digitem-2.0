@@ -36,7 +36,7 @@
 </template>
 <script setup lang="ts">
 const authStore = useAuthStore();
-const router = useRouter();
+const route = useRouter();
 
 interface loginForm {
   username: string;
@@ -52,7 +52,7 @@ function login() {
   authStore
     .login(loginForm)
     .then(() => {
-      router.push("/tenant");
+      route.push("/organization");
     })
     .catch((error) => console.error("login error", error));
 }

@@ -1,35 +1,27 @@
 <template>
-  <div v-for="product in products" :key="product.id">
+  <div v-for="article in articles" :key="article.id">
     <NuxtLink to="/">
-      <BaseContainer
-        class="bg-gray-900 rounded-lg text-center items-center mt-2 py-5 px-5"
-      >
+      <BaseCard class="mb-2">
         <div class="flex items-center">
-          <img :src="product.image" alt="image" class="h-10 w-10 mr-3" />
+          <img :src="article.image" alt="image" class="h-10 w-10 mr-3" />
           <div class="text-left flex-grow">
-            <p
-              class="text-sm md:text-base leading-normal font-medium text-white"
-            >
-              {{ product.title }}
+            <p class="text-sm md:text-base leading-normal font-medium">
+              {{ article.title }}
             </p>
-            <p class="text-xs md:text-sm text-white">
-              {{ product.description.substring(0, 130) }}...
+            <p class="text-xs md:text-sm">
+              {{ article.description.substring(0, 130) }}...
             </p>
           </div>
         </div>
-      </BaseContainer>
+      </BaseCard>
     </NuxtLink>
   </div>
 </template>
 
 <script setup>
-const runtimeConfig = useRuntimeConfig();
-const apiBase = runtimeConfig.public.apiBase;
+const props = defineProps(['articles']);
 
 defineComponent({
   name: "ArtikelIndex",
 });
-
-// fetch product
-const { data: products } = await useFetch(`${apiBase}/products?limit=7`);
 </script>
