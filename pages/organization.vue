@@ -18,6 +18,7 @@
 <script setup>
 const user = JSON.parse(localStorage.getItem('user'));
 const tenants = ref("");
+const organizationStore = useOrganizationStore();
 
 onMounted(() => {
   getTenant();
@@ -29,5 +30,6 @@ const getTenant = async () => {
   }).then((response) => {
     tenants.value = response.data.user.organizations;
   });
+  organizationStore.toOrganization(tenants);
 };
 </script>
