@@ -68,7 +68,7 @@ async function login() {
   try {
     loading.value = true
     await authStore.login(loginForm)
-    route.push("/tenant");
+    route.push("/organization");
   } catch (error) {
     console.error(error);
     isOpen.value = true;
