@@ -1,8 +1,6 @@
 <template>
   <NuxtLink to="/">
-    <BaseContainer
-      class="bg-gray-900 rounded-lg text-center items-center mt-2 py-5 px-5"
-    >
+    <BaseCard>
       <div class="flex items-center">
         <svg
           aria-hidden="true"
@@ -21,14 +19,14 @@
           ></path>
         </svg>
         <div class="text-left flex-grow">
-          <p class="text-sm md:text-base leading-normal font-medium text-white">
+          <p class="text-sm md:text-base leading-normal font-medium">
             SOP Adaptasi Kebiasaan Baru JDS
           </p>
-          <p class="text-xs md:text-sm text-white">Digiteam</p>
-          <p class="text-xs md:text-sm text-white">Jumat, 9 Okt 2020</p>
+          <p class="text-xs md:text-sm">Digiteam</p>
+          <p class="text-xs md:text-sm">Jumat, 9 Okt 2020</p>
         </div>
       </div>
-    </BaseContainer>
+    </BaseCard>
   </NuxtLink>
 </template>
 

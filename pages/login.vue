@@ -62,7 +62,7 @@ let loginForm: loginForm = {
 };
 
 const isOpen = ref(false);
-const loading = ref(false)
+const loading = ref(false);
 
 async function login() {
   try {
@@ -70,10 +70,10 @@ async function login() {
     await authStore.login(loginForm)
     route.push("/tenant");
   } catch (error) {
-    console.error(error)
-    isOpen.value = true
+    console.error(error);
+    isOpen.value = true;
   } finally {
-    loading.value = false
+    loading.value = false;
   }
 }
 
