@@ -4,8 +4,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const organizationStore = useOrganizationStore();
+<script setup>
 const router = useRouter();
 const props = defineProps(['tenants']);
 
@@ -13,8 +12,7 @@ defineComponent({
   name: "TenantList",
 });
 
-function goToTenant(tenant:any) {
-  organizationStore.toOrganization(tenant)
+function goToTenant(tenant) {
   router.push({ path: tenant.slug });
 }
 </script>
