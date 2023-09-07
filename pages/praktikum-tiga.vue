@@ -1,5 +1,5 @@
 <template>
   <div>
-    Praktikum tiga
+    Praktikum tiga update
   </div>
 </template>
