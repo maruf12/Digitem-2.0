@@ -1,5 +1,5 @@
 <template>
   <div>
-    Praktikum tiga
+    Halo, hari ini kita mau praktikum conflict di git yaa..
   </div>
 </template>
