@@ -1,5 +1,5 @@
 <template>
   <div>
-    Praktikum tiga Fauzi Maulana Kusuma
+    Praktikum tiga GIT-Farras
   </div>
 </template>
