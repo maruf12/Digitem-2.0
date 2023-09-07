@@ -1,5 +1,5 @@
 <template>
   <div>
-    Praktikum tiga Farras
+    Praktikum tiga GIT Farras
   </div>
 </template>
